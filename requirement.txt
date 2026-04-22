@@ -3,3 +3,7 @@ uvicorn
 openai
 redis
 python-dotenv
+gtts
+langdetect
+whisper
+ffmpeg-python

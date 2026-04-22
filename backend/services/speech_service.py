@@ -1,5 +1,13 @@
-def speech_to_text(audio):
-    return "converted text (dummy)"
+import whisper
+from gtts import gTTS
 
-def text_to_speech(text):
-    return b"audio-bytes"
+model = whisper.load_model("base")
+
+def speech_to_text(file_path):
+    result = model.transcribe(file_path)
+    return result["text"]
+
+def text_to_speech(text, filename="output.mp3"):
+    tts = gTTS(text=text, lang='en')
+    tts.save(filename)
+    return filename
