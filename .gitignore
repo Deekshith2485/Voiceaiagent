@@ -1,0 +1,48 @@
+#  Environment variables
+.env
+
+#  Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+#  Virtual environment
+venv/
+env/
+
+#  Logs
+*.log
+
+#  SQLite (if used later)
+*.db
+
+#  Temporary files
+temp_*
+*.tmp
+
+#  Audio files
+*.mp3
+*.wav
+
+#  Whisper models (optional heavy files)
+*.pt
+
+#  Docker (optional)
+*.pid
+
+#  OS files
+.DS_Store
+Thumbs.db
+
+#  IDE files
+.vscode/
+.idea/
+
+# Python build files
+build/
+dist/
+*.egg-info/
+
+#  Secrets
+*.key
+*.pem
